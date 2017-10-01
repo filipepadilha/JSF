@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:decorate xmlns="http://www.w3.org/1999/xhtml"
+             xmlns:h="http://xmlns.jcp.org/jsf/html"
+             xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+             template="index.xhtml"
+             xmlns:p="http://primefaces.org/ui"
+             xmlns:sc="http://xmlns.jcp.org/jsf/composite/sccomp"
+             xmlns:b="http://bootsfaces.net/ui">
+
+    
+        
+            <ui:composition template="index.xhtml">
+            <ui:define name="carousel">
+                <h:form>
+                <b:carousel id="body" style="width:800px" interval="2500">
+                    <b:carouselItem >
+                        <img  src="imagens/Koenigsegg-Agera-RS.jpg " alt="Koenisegg Agere RS" style="width: 800px; height: 600px" />
+                        
+                        <b:carouselCaption>
+                            <h3>Alguns dos Carros mais incriveis !!</h3>
+
+                        </b:carouselCaption>
+                    </b:carouselItem>
+                    <b:carouselItem caption="Koenisegg Agere RS.">
+                        <img src="resources/imagens/Koenigsegg-Agera-RS.jpg " alt="Carro" style="width: 800px; height: 600px" />
+                    </b:carouselItem>
+                    <b:carouselItem caption="Porsche 918 Spider">
+                        <img src="resources/imagens/918Spider.jpg" alt="Valladolid" style="width: 800px; height: 600px" />
+                    </b:carouselItem>
+                    <b:carouselItem>
+                        <img src="Valladolid4.png" alt="Valladolid" style="width: 800px; height: 600px" />
+                        <b:carouselCaption>
+                            <h3>Fountains</h3>
+                            <p>In Spain, dry as it is, people love to play with water.</p>
+                        </b:carouselCaption>
+                    </b:carouselItem>
+                    <b:carouselItem caption="Valladolid - a city with a lot of history">
+                        <img src="car1.jpg" alt="Valladolid" style="width: 800px; height: 600px" />
+                    </b:carouselItem>
+                </b:carousel>
+              </h:form>
+
+
+            </ui:define>
+            </ui:composition>
+           
+        
+   
+</ui:decorate>
+
